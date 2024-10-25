@@ -67,11 +67,16 @@
 /** CARD                      **/
 /** ************************* **/
 .cardContainer{
-  height: 100%;
+  background-color:#0F1E33;
+  margin: 0;
+  padding: 0;
 }
 
 .card{
-  margin: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  background-color: #254C80;
+  color: white;
 }
 
 .col-2sur10{
@@ -80,6 +85,9 @@
 
 .col-4sur10{
   width: 40%;
+}
+.row{
+  --bs-gutter-x: 0;
 }
 
 
