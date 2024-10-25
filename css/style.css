@@ -1,0 +1,124 @@
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400; */
+  min-height: 100dvh;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+/** ************************* **/
+/** FONTS                     **/
+/** ************************* **/
+@font-face {
+  font-family: 'NirmalaUI-Bold';
+  src: url('/fonts/nirmala-ui-bold.ttf');
+}@font-face {
+  font-family: 'NirmalaUI-Semilight';
+  src: url('/fonts/nirmala-ui-semilight.ttf');
+}
+.title{
+  font-family: 'NirmalaUI-Semilight';
+}
+.title-bold, .title:hover{
+  font-family: 'NirmalaUI-Bold';
+}
+.text{
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/** ************************* **/
+/** COLORS                    **/
+/** ************************* **/
+.cstm-darkBlue{
+  background-color: #0F1E33;
+}
+.cstm-blue{
+  background-color: #254C80;
+}
+.cstm-lightBlue{
+  background-color: #3B7BCD;
+}
+
+/** ************************* **/
+/** HEADER & BREADCRUMB       **/
+/** ************************* **/
+#logo{
+  max-height: 75px;
+  max-width: 75px;
+}
+
+.iconLG{
+  max-height: 35px;
+  max-width: 35px;
+}
+
+.breadcrumb{
+  line-height: 0;
+}
+
+/** ************************* **/
+/** CARD                      **/
+/** ************************* **/
+.cardContainer{
+  height: 100%;
+}
+
+.card{
+  margin: 0.5rem;
+}
+
+.col-2sur10{
+  width: 20%;
+}
+
+.col-4sur10{
+  width: 40%;
+}
+
+
+/** ************************* **/
+/** DASHBOARD                 **/
+/** ************************* **/
+
+
+
+body{
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+
+@media (prefers-color-scheme: light) {
+  /* :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  } */
+}
