@@ -6,7 +6,7 @@
  */
 export function generateBreadCrumb(breadCrumbLinks){
     let breadCrumb = document.getElementById('breadCrumb');
-    breadCrumb.classList.add('cstm-lightBlue', 'text-light', 'px-2', 'pt-3', 'g-0');
+    breadCrumb.classList.add('bg-cstm-lightBlue', 'text-light', 'px-2', 'pt-3', 'g-0');
     // creating the breadCrumb LIST
     let breadCrumbList = document.createElement('ol');
     breadCrumbList.classList.add('breadcrumb', 'mb-0');

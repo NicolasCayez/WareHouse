@@ -5,7 +5,7 @@
  */
 export function generateHeader(){
     let header = document.querySelector('header');
-    header.classList.add('d-flex', 'py-2', 'cstm-blue');
+    header.classList.add('d-flex', 'py-2', 'bg-cstm-blue');
 
     // LOGO & TITLE
     let logoTitle = document.createElement('div');

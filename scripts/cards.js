@@ -1,7 +1,7 @@
 
 export function createCard(parentId, id){
     let parent = document.getElementById(parentId);
-    parent.classList.add('pe-2');
+    // parent.classList.add('pe-2');
     let card = document.createElement('div');
     card.id = id;
     card.classList.add('card', 'w-100');

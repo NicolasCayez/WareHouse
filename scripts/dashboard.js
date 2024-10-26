@@ -32,16 +32,27 @@ function createLinkByLvl(parentId, linkId, linkName, url, linklvl, collapsible =
     container.append(line);
     let iconLink = document.createElement('a');
     iconLink.id = linkId + 'icon';
+    iconLink.href = ``;
     iconLink.setAttribute('collapsible', collapsible)
-    iconLink.classList.add('fs-5','linkIcon', 'text-light');
+    iconLink.classList.add('fs-5', 'linkIcon', 'text-light');
     iconLink.innerText = '> ';
     line.append(iconLink);
 
     let link = document.createElement('a');
     link.id = linkId;
-    link.classList.add('title', 'text-light', 'mt-2');
+    link.classList.add('title', 'text-light', 'mt-2', 'ms-3');
     link.innerText = linkName;
     link.href = url;
+    if(collapsible == false){
+        iconLink.classList.add('cstm-blue');
+        if(linklvl == 1){
+            iconLink.classList.remove('text-light');
+        }if(linklvl == 2){
+            iconLink.classList.remove('text-light');
+        }if(linklvl == 3){
+            iconLink.classList.remove('text-light');
+        }
+    }
     line.append(link);
 }
 
@@ -163,6 +174,9 @@ export function generateDashboard(){
         createLinkByLvl('linkTransactions'+'Group', 'linkInventrories', 'Inventrories', '/pages/myWarehouses/myWarehouses.html', 2, true);
         // --> --> New Inventory
         createLinkByLvl('linkInventrories'+'Group', 'linkNewInventory', 'New inventory', '/pages/myWarehouses/myWarehouses.html', 3, false);
+        //? SECTION - Reports
+        createMenulvl1('menuReports');
+        createLinkByLvl('menuReports', 'linkReports', 'Reports', '/pages/myWarehouses/myWarehouses.html', 1, false);
     }
 
 

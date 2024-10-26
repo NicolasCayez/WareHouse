@@ -36,14 +36,24 @@
 /** ************************* **/
 /** COLORS                    **/
 /** ************************* **/
-.cstm-darkBlue{
+.bg-cstm-darkBlue{
   background-color: #0F1E33;
 }
-.cstm-blue{
+.bg-cstm-blue{
   background-color: #254C80;
 }
-.cstm-lightBlue{
+.bg-cstm-lightBlue{
   background-color: #3B7BCD;
+}
+
+.cstm-darkBlue{
+  color: #0F1E33;
+}
+.cstm-blue{
+  color: #254C80;
+}
+.cstm-lightBlue{
+  color: #3B7BCD;
 }
 
 /** ************************* **/
