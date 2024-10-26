@@ -77,25 +77,38 @@
   margin-left: 0.5rem;
   background-color: #254C80;
   color: white;
+  border: solid 5px white;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 
 .col-2sur10{
   width: 20%;
 }
-
 .col-4sur10{
   width: 40%;
 }
+
 .row{
   --bs-gutter-x: 0;
 }
 
+.menuLvl1{
+  margin-left: 0rem;
+  font-size: 1.2rem;
+}
+.menuLvl2{
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+.menuLvl3{
+  margin-left: 2rem;
+  font-size: 0.8rem;
+}
 
 /** ************************* **/
 /** DASHBOARD                 **/
 /** ************************* **/
-
-
 
 body{
   min-height: 100vh;

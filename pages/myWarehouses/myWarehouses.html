@@ -9,34 +9,34 @@
 		<link rel="stylesheet" href="/css/style.css">
 		<title>MyWareHouses</title>
 	</head>
-	<body class="container-fluid cstm-darkBlue g-0 overflow-hidden">
+	<body class="container-fluid cstm-darkBlue g-0 overflow-hidden d-flex flex-column h-100">
 		<header></header>
 		<nav id="breadCrumb" aria-label="breadcrumb"></nav>
 
 
 			
-			<div class="row py-0 my-0">
-				<nav id="dashboard" class="col-2"></nav>
-				<!-- PAGE MAIN CONTENT -->
-				<div class="row col-10 px-0">
-					<div class="row pe-2">
-						<div class="col-2sur10">
-							<div class="card cardContainer">My WareHouses</div>
-						</div>
-						<div class="col-4sur10">
-							<div class="card cardContainer">Selected</div>
-						</div>
-						<div class="col-4sur10">
-							<div class="card cardContainer">Search WareHouses</div>
-						</div>
+		<div class="row pt-0 mb-5 my-0 flex-fill">
+			<nav id="dashboard" class="col-2 d-flex"></nav>
+			<!-- PAGE MAIN CONTENT -->
+			<div class="row col-10 px-0">
+				<div class="row pe-2">
+					<div class="col-2sur10">
+						<div id="myWarehouseCardContainer" class="cardContainer"></div>
 					</div>
-					<div class="row pe-0 pe-2">
-						<div class="col">
-							<div class="card cardContainer">Detail</div>
-						</div>
+					<div class="col-4sur10">
+						<div id="selectedCardContainer" class="cardContainer"></div>
+					</div>
+					<div class="col-4sur10">
+						<div id="searchCardContainer" class="cardContainer"></div>
+					</div>
+				</div>
+				<div class="row pe-0 pe-2">
+					<div class="col">
+						<div id="lastEventsCardContainer" class="cardContainer"></div>
 					</div>
 				</div>
 			</div>
+		</div>
 			
 			
 			
