@@ -29,14 +29,14 @@ createCardTitle('searchCard', 'myWarehouseCardTitle', 'Search');
 createCard('lastEventsCardContainer','lastEventsCard');
 createCardTitle('lastEventsCard', 'myWarehouseCardTitle', 'Last events');
 
-//MY WAREHOUSES LIST
-let warehousesListContainer = document.getElementById('myWarehouseCard');
-if(warehousesListContainer != null){
+// MY WAREHOUSES LIST
+let warehousesCard = document.getElementById('myWarehouseCard');
+if(warehousesCard != null){
     let warehousesList = document.createElement('ul');
     warehousesList.style.overflow = 'hidden';
     warehousesList.style.overflowY = 'scroll';
     warehousesList.classList.add('card');
-    warehousesListContainer.append(warehousesList);
+    warehousesCard.append(warehousesList);
 
     //! a générer
     let warehousesListArray = ['WareHouse 1', 'WareHouse 2', 'Tom\'s Depot'];
@@ -47,5 +47,51 @@ if(warehousesListContainer != null){
         $li.innerText = '> ' + warehousesListArray[i];
         warehousesList.append($li);
     };
+
+}
+// SELECTED INFO
+let selectedCard = document.getElementById('selectedCard');
+if(selectedCard != null){
+    let selectedList = document.createElement('ul');
+    selectedList.style.overflow = 'hidden';
+    selectedList.style.overflowY = 'scroll';
+    selectedList.classList.add('card', 'h-100');
+    selectedCard.append(selectedList);
+
+    //! a générer
+
+}
+
+// SEARCH BAR
+let searchCard = document.getElementById('searchCard');
+if(searchCard != null){
+    let searchForm = document.createElement('form');
+    searchForm.classList.add('my-auto')
+    searchCard.append(searchForm);
+    let searchInput = document.createElement('input');
+    searchInput.type = 'text';
+    searchInput.id = 'searchInput';
+    searchInput.name = 'searchInput';
+    searchInput.placeholder = 'Search';
+    searchInput.classList.add('form-control');
+
+    searchForm.append(searchInput);
+    
+
+    //! a générer
+
+}
+
+// LAST EVENTS LIST
+let lastEventsCard = document.getElementById('lastEventsCard');
+if(lastEventsCard != null){
+    let lastEventsList = document.createElement('ul');
+    lastEventsList.style.overflow = 'hidden';
+    lastEventsList.style.overflowY = 'scroll';
+    lastEventsList.classList.add('card', 'h-100');
+    lastEventsCard.append(lastEventsList);
+
+    //! a générer
+
 
 }

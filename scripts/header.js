@@ -18,8 +18,9 @@ export function generateHeader(){
     logo.classList.add('col');
     logoTitle.append(logo);
     // TITLE
-    let title = document.createElement('h1');
+    let title = document.createElement('a');
     title.id = 'headerTitle';
+    title.href = '#';
     title.innerText = 'WareHouse';
     title.classList.add('my-auto', 'col', 'ms-2', 'fs-2', 'text-light');
     logoTitle.append(title);
@@ -39,8 +40,9 @@ export function generateHeader(){
     homeLogo.classList.add('col', 'iconLG', 'my-auto');
     home.append(homeLogo);
     // TITLE
-    let homeTitle = document.createElement('h1');
+    let homeTitle = document.createElement('a');
     homeTitle.innerText = 'Home';
+    homeTitle.href = '#';
     homeTitle.classList.add('my-auto', 'col', 'ms-2', 'fs-4', 'text-light');
     home.append(homeTitle);
     //CLICK on the LOGO and TITLE
@@ -59,7 +61,8 @@ export function generateHeader(){
     myWarehousesLogo.classList.add('col', 'iconLG', 'my-auto');
     myWarehouses.append(myWarehousesLogo);
     // TITLE
-    let myWarehousesTitle = document.createElement('h1');
+    let myWarehousesTitle = document.createElement('a');
+    myWarehousesTitle.href = '#';
     myWarehousesTitle.innerText = 'My WareHouses';
     myWarehousesTitle.classList.add('my-auto', 'col', 'ms-2', 'fs-4', 'text-light');
     myWarehouses.append(myWarehousesTitle);

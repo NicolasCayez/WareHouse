@@ -41,6 +41,7 @@ header{
 .content{
   flex: 1 1 auto;
   padding: 0.2rem;
+  overflow-y: auto;
 }
 footer{
   flex: 0 1 40px;
@@ -172,6 +173,7 @@ a{
 }
 a:hover{
   font-weight: bold;
+  text-decoration: underline;
 }
 
 
