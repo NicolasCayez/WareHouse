@@ -1,18 +1,3 @@
-:root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400; */
-  min-height: 100dvh;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
-
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-}
 /** ************************* **/
 /** FONTS                     **/
 /** ************************* **/
@@ -31,6 +16,34 @@
 }
 .text{
   font-family: "Segoe UI", Arial, sans-serif;
+}
+/** ************************* **/
+/** BASE SIZING & POSITION    **/
+/** ************************* **/
+html, body{
+  height: 100%;
+  margin: 0;
+}
+body{
+  overflow: hidden;
+}
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+.box-container {
+  display: contents;
+}
+header{
+  flex: 0 1 80px;
+}
+.content{
+  flex: 1 1 auto;
+  padding: 0.2rem;
+}
+footer{
+  flex: 0 1 40px;
 }
 
 /** ************************* **/
@@ -57,20 +70,32 @@
 }
 
 /** ************************* **/
-/** HEADER & BREADCRUMB       **/
+/** HEADER CONTENT            **/
 /** ************************* **/
 #logo{
   max-height: 75px;
   max-width: 75px;
 }
-
 .iconLG{
   max-height: 35px;
   max-width: 35px;
 }
-
-.breadcrumb{
-  line-height: 0;
+/** ************************* **/
+/** BREADCRUMB                **/
+/** ************************* **/
+.breadcrumb-row{
+  height: min-content;
+}
+/** ************************* **/
+/** GRID TEMPLATES            **/
+/** ************************* **/
+.grid-1-5{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.grid-1-2-2{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 /** ************************* **/
@@ -80,12 +105,10 @@
   background-color:#0F1E33;
   margin: 0;
   padding-top: 0;
-  padding-bottom: 0.5rem;
+  padding: 0.2rem;
 }
 
 .cstm-card{
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
   background-color: #254C80;
   color: white;
   border: solid 5px white;
@@ -120,28 +143,70 @@
 /** ************************* **/
 /** DASHBOARD                 **/
 /** ************************* **/
+.dashboard{
+  padding-right: 0;
+}
+
+
+
+/** ************************* **/
+/** BASE SIZING & POSITION    **/
+/** ************************* **/
 
 body{
-  min-height: 100vh;
+  /* height: 100%; */
   font-family: "Segoe UI", Arial, sans-serif;
 }
-
-
-footer{
+/* footer{
   position: fixed;
   bottom: 0;
+  height: 40px;
   width: 100%;
-}
+} */
 
+/** ************************* **/
+/** LIENS                     **/
+/** ************************* **/
 a{
   text-decoration: none;
 }
-
 a:hover{
   font-weight: bold;
 }
 
 
+
+
+
+
+
+
+/** ************************* **/
+/** TESTING BORDER            **/
+/** ************************* **/
+.testDiv{
+  border: solid 2px red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** ************************* **/
+/** MEDIA QUERIES             **/
+/** ************************* **/
 @media (prefers-color-scheme: light) {
   /* :root {
     color: #213547;

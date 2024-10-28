@@ -6,20 +6,20 @@
  */
 export function generateBreadCrumb(breadCrumbLinks){
     let breadCrumb = document.getElementById('breadCrumb');
-    breadCrumb.classList.add('bg-cstm-lightBlue', 'text-light', 'px-2', 'pt-3', 'g-0');
+    breadCrumb.classList.add('bg-cstm-lightBlue', 'text-light');
     // creating the breadCrumb LIST
     let breadCrumbList = document.createElement('ol');
     breadCrumbList.classList.add('breadcrumb', 'mb-0');
     breadCrumb.setAttribute('style', "--bs-breadcrumb-divider: '';")
     // creating the breadCrumb TITLE
     let breadCrumbTitle = document.createElement('p');
-    breadCrumbTitle.classList.add('title-bold', 'me-5');
+    breadCrumbTitle.classList.add('title-bold', 'ms-2', 'me-5', 'my-1');
     breadCrumbTitle.innerText = 'You are here :';
     breadCrumbList.append(breadCrumbTitle);
     //creating the breadCrumb ELEMENTS
     for(let i=0; i<breadCrumbLinks.length; i++){
         let $li = document.createElement('li');
-        $li.classList.add('breadcrumb-item');
+        $li.classList.add('breadcrumb-item', 'my-1');
         let separator = '';
         if(i>0){
             separator = ' > ';

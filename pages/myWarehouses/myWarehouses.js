@@ -33,7 +33,6 @@ createCardTitle('lastEventsCard', 'myWarehouseCardTitle', 'Last events');
 let warehousesListContainer = document.getElementById('myWarehouseCard');
 if(warehousesListContainer != null){
     let warehousesList = document.createElement('ul');
-    warehousesList.style.height = '100%';
     warehousesList.style.overflow = 'hidden';
     warehousesList.style.overflowY = 'scroll';
     warehousesList.classList.add('card');
