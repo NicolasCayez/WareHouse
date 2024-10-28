@@ -79,10 +79,11 @@
 .cardContainer{
   background-color:#0F1E33;
   margin: 0;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0.5rem;
 }
 
-.card{
+.cstm-card{
   margin-top: 0.5rem;
   margin-left: 0.5rem;
   background-color: #254C80;

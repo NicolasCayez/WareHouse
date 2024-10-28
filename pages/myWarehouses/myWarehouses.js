@@ -28,3 +28,25 @@ createCard('searchCardContainer','searchCard');
 createCardTitle('searchCard', 'myWarehouseCardTitle', 'Search');
 createCard('lastEventsCardContainer','lastEventsCard');
 createCardTitle('lastEventsCard', 'myWarehouseCardTitle', 'Last events');
+
+//MY WAREHOUSES LIST
+let warehousesListContainer = document.getElementById('myWarehouseCard');
+if(warehousesListContainer != null){
+    let warehousesList = document.createElement('ul');
+    warehousesList.style.height = '100%';
+    warehousesList.style.overflow = 'hidden';
+    warehousesList.style.overflowY = 'scroll';
+    warehousesList.classList.add('card');
+    warehousesListContainer.append(warehousesList);
+
+    //! a générer
+    let warehousesListArray = ['WareHouse 1', 'WareHouse 2', 'Tom\'s Depot'];
+    for(let i=0; i<warehousesListArray.length; i++){
+        let $li = document.createElement('li');
+        $li.classList.add('lh-3');
+        $li.style.listStyle = 'none';
+        $li.innerText = '> ' + warehousesListArray[i];
+        warehousesList.append($li);
+    };
+
+}

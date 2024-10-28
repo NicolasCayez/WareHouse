@@ -4,7 +4,7 @@ export function createCard(parentId, id){
     // parent.classList.add('pe-2');
     let card = document.createElement('div');
     card.id = id;
-    card.classList.add('card', 'w-100');
+    card.classList.add('card', 'cstm-card', 'w-100', 'h-100');
     parent.append(card);
 };
 
