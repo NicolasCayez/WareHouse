@@ -8,6 +8,6 @@ export function generateFooter(){
     let LegalNotices = document.createElement('a');
     LegalNotices.id = 'LegalNotices';
     LegalNotices.innerText = 'Legal Notices';
-    LegalNotices.classList.add('mx-auto', 'my-1', 'col-1', 'fs-5', 'text-light');
+    LegalNotices.classList.add('mx-auto', 'col-1', 'fs-6', 'text-light');
     footer.append(LegalNotices);
 };

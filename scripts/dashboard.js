@@ -177,11 +177,18 @@ export function generateDashboard(){
         //? SECTION - Reports
         createMenulvl1('menuReports');
         createLinkByLvl('menuReports', 'linkReports', 'Reports', '/pages/myWarehouses/myWarehouses.html', 1, false);
+        
+        //? dernier lien en bas logOut/logAs
+        createMenulvl1('logOutLogAs');
+        let logOutLogAs = document.getElementById('logOutLogAs');
+        let logOutLogAsLink = document.createElement('a');
+        logOutLogAsLink.id = 'logOutLogAsLink';
+        logOutLogAsLink.classList.add('title-bold', 'text-light', 'mb-2', 'ms-3', 'fs-6');
+        logOutLogAsLink.innerText = 'log Out / Log As';
+        logOutLogAsLink.href = '/pages/myWarehouses/myWarehouses.html';
+        logOutLogAs.append(logOutLogAsLink);
+        logOutLogAs.style.position = 'absolute';
+        logOutLogAs.style.bottom = '0';
+        logOutLogAs.style.left = '0';
     }
-
-
-
-
-    //
-
 };

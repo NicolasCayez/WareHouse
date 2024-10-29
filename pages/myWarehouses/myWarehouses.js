@@ -35,7 +35,7 @@ if(warehousesCard != null){
     let warehousesList = document.createElement('ul');
     warehousesList.style.overflow = 'hidden';
     warehousesList.style.overflowY = 'scroll';
-    warehousesList.classList.add('card');
+    warehousesList.classList.add('card', 'h-100', 'mb-0');
     warehousesCard.append(warehousesList);
 
     //! a générer
@@ -55,7 +55,7 @@ if(selectedCard != null){
     let selectedList = document.createElement('ul');
     selectedList.style.overflow = 'hidden';
     selectedList.style.overflowY = 'scroll';
-    selectedList.classList.add('card', 'h-100');
+    selectedList.classList.add('card', 'h-100', 'mb-0');
     selectedCard.append(selectedList);
 
     //! a générer
@@ -88,7 +88,7 @@ if(lastEventsCard != null){
     let lastEventsList = document.createElement('ul');
     lastEventsList.style.overflow = 'hidden';
     lastEventsList.style.overflowY = 'scroll';
-    lastEventsList.classList.add('card', 'h-100');
+    lastEventsList.classList.add('card', 'h-100', 'mb-0');
     lastEventsCard.append(lastEventsList);
 
     //! a générer
