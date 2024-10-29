@@ -47,6 +47,25 @@ footer{
   flex: 0 1 30px;
 }
 
+.h-20{
+  height: 20%;
+}
+.h-30{
+  height: 30%;
+}
+.h-40{
+  height: 40%;
+}
+.h-60{
+  height: 60%;
+}
+.h-80{
+  height: 80%;
+}
+.h-90{
+  height: 90%;
+}
+
 /** ************************* **/
 /** COLORS                    **/
 /** ************************* **/
@@ -173,7 +192,7 @@ a{
 }
 a:hover{
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 

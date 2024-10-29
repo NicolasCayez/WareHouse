@@ -161,19 +161,19 @@ export function generateDashboard(){
         createLinkByLvl('menuItems', 'linkItems', 'Items', '/pages/myWarehouses/myWarehouses.html', 1, false);
         //? SECTION - Transactions
         createMenulvl1('menuTransactions');
-        createLinkByLvl('menuTransactions', 'linkTransactions', 'Transactions', '/pages/myWarehouses/myWarehouses.html', 1, true);
+        createLinkByLvl('menuTransactions', 'linkTransactions', 'Transactions', '/pages/transactions/transactions.html', 1, true);
         // --> Receptions
-        createLinkByLvl('linkTransactions'+'Group', 'linkReceptions', 'Receptions', '/pages/myWarehouses/myWarehouses.html', 2, false);
+        createLinkByLvl('linkTransactions'+'Group', 'linkReceptions', 'Receptions', '/pages/transactions/transactions.html', 2, false);
         // --> Transferts
-        createLinkByLvl('linkTransactions'+'Group', 'linkTransferts', 'Transferts', '/pages/myWarehouses/myWarehouses.html', 2, true);
+        createLinkByLvl('linkTransactions'+'Group', 'linkTransferts', 'Transferts', '/pages/transactions/transactions.html', 2, true);
         // --> --> New Transfert
-        createLinkByLvl('linkTransferts'+'Group', 'linkNewTransfert', 'New transfert', '/pages/myWarehouses/myWarehouses.html', 3, false);
+        createLinkByLvl('linkTransferts'+'Group', 'linkNewTransfert', 'New transfert', '/pages/transactions/newTransfert.html', 3, false);
         // --> Stock modif
-        createLinkByLvl('linkTransactions'+'Group', 'linkStockModif', 'Stock modifications', '/pages/myWarehouses/myWarehouses.html', 2, false);
+        createLinkByLvl('linkTransactions'+'Group', 'linkStockModif', 'Stock modifications', '/pages/transactions/transactions.html', 2, false);
         // --> Inventrories
-        createLinkByLvl('linkTransactions'+'Group', 'linkInventrories', 'Inventrories', '/pages/myWarehouses/myWarehouses.html', 2, true);
+        createLinkByLvl('linkTransactions'+'Group', 'linkInventrories', 'Inventrories', '/pages/transactions/transactions.html', 2, true);
         // --> --> New Inventory
-        createLinkByLvl('linkInventrories'+'Group', 'linkNewInventory', 'New inventory', '/pages/myWarehouses/myWarehouses.html', 3, false);
+        createLinkByLvl('linkInventrories'+'Group', 'linkNewInventory', 'New inventory', '/pages/transactions/transactions.html', 3, false);
         //? SECTION - Reports
         createMenulvl1('menuReports');
         createLinkByLvl('menuReports', 'linkReports', 'Reports', '/pages/myWarehouses/myWarehouses.html', 1, false);

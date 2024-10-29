@@ -1,5 +1,4 @@
 import { generateBreadCrumb } from "/scripts/breadcrumb";
-import { generateDashboard } from "/scripts/dashboard";
 import { createCard, createCardTitle } from "../../scripts/cards";
 
 // link aspect change
@@ -13,23 +12,15 @@ generateBreadCrumb(breadCrumbLinks);
 
 
 //DASHBOARD
-// generateDashboard();
-// dashboard link style
+// dashboard link style : current page is bold
 document.getElementById('linkMyWarehouses').classList.remove('title');
 document.getElementById('linkMyWarehouses').classList.add('title-bold');
 
 
-//
+// LEFT PART CARDS
+// MY WAREHOUSES LIST
 createCard('myWarehouseCardContainer','myWarehouseCard');
 createCardTitle('myWarehouseCard', 'myWarehouseCardTitle', 'My WareHouses');
-createCard('selectedCardContainer','selectedCard');
-createCardTitle('selectedCard', 'myWarehouseCardTitle', 'Selected');
-createCard('searchCardContainer','searchCard');
-createCardTitle('searchCard', 'myWarehouseCardTitle', 'Search');
-createCard('lastEventsCardContainer','lastEventsCard');
-createCardTitle('lastEventsCard', 'myWarehouseCardTitle', 'Last events');
-
-// MY WAREHOUSES LIST
 let warehousesCard = document.getElementById('myWarehouseCard');
 if(warehousesCard != null){
     let warehousesList = document.createElement('ul');
@@ -37,7 +28,6 @@ if(warehousesCard != null){
     warehousesList.style.overflowY = 'scroll';
     warehousesList.classList.add('card', 'h-100', 'mb-0');
     warehousesCard.append(warehousesList);
-
     //! a générer
     let warehousesListArray = ['WareHouse 1', 'WareHouse 2', 'Tom\'s Depot'];
     for(let i=0; i<warehousesListArray.length; i++){
@@ -47,9 +37,10 @@ if(warehousesCard != null){
         $li.innerText = '> ' + warehousesListArray[i];
         warehousesList.append($li);
     };
-
 }
 // SELECTED INFO
+createCard('selectedCardContainer','selectedCard');
+createCardTitle('selectedCard', 'myWarehouseCardTitle', 'Selected');
 let selectedCard = document.getElementById('selectedCard');
 if(selectedCard != null){
     let selectedList = document.createElement('ul');
@@ -57,12 +48,11 @@ if(selectedCard != null){
     selectedList.style.overflowY = 'scroll';
     selectedList.classList.add('card', 'h-100', 'mb-0');
     selectedCard.append(selectedList);
-
     //! a générer
-
 }
-
 // SEARCH BAR
+createCard('searchCardContainer','searchCard');
+createCardTitle('searchCard', 'myWarehouseCardTitle', 'Search');
 let searchCard = document.getElementById('searchCard');
 if(searchCard != null){
     let searchForm = document.createElement('form');
@@ -74,15 +64,13 @@ if(searchCard != null){
     searchInput.name = 'searchInput';
     searchInput.placeholder = 'Search';
     searchInput.classList.add('form-control');
-
     searchForm.append(searchInput);
-    
-
     //! a générer
-
 }
 
 // LAST EVENTS LIST
+createCard('lastEventsCardContainer','lastEventsCard');
+createCardTitle('lastEventsCard', 'myWarehouseCardTitle', 'Last events');
 let lastEventsCard = document.getElementById('lastEventsCard');
 if(lastEventsCard != null){
     let lastEventsList = document.createElement('ul');
@@ -90,8 +78,5 @@ if(lastEventsCard != null){
     lastEventsList.style.overflowY = 'scroll';
     lastEventsList.classList.add('card', 'h-100', 'mb-0');
     lastEventsCard.append(lastEventsList);
-
     //! a générer
-
-
 }
