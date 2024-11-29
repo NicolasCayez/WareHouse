@@ -1,0 +1,72 @@
+version: "3"
+
+volumes:
+  mariadb:
+    driver: local
+
+networks:
+  db:
+    driver: bridge
+  app-network:
+    driver: bridge
+
+services:
+  # Service Nginx - Serveur Web
+  web:
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./www:/var/www/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+    networks:
+      - app-network
+
+  #service MariaDB
+  mariadb:
+    container_name: mariadb
+    restart: always
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_USER: user
+      MYSQL_PASSWORD: userpassword
+      MYSQL_DATABASE: warehouse_db
+    expose:
+      - "40000"
+    ports:
+      - "40000:3306"
+    volumes:
+      - mariadb:/var/lib/mysql
+    networks:
+      db:
+
+  #service PHP-PFM
+  php:
+    container_name: php
+    build:
+      context: .
+      dockerfile: php.dockerfile
+    volumes:
+      - ./www:/var/www/html
+    networks:
+      - app-network
+
+  #phpMyAdmin
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin:latest
+    restart: always
+    expose:
+      - "40001"
+    ports:
+      - "40001:80"
+    environment:
+      - PMA_HOST=mariadb
+      - PMA_PORT=3306
+    networks:
+      db:
+
