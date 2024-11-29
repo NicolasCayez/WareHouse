@@ -36,9 +36,9 @@ services:
       MYSQL_PASSWORD: userpassword
       MYSQL_DATABASE: warehouse_db
     expose:
-      - "40000"
+      - "3306"
     ports:
-      - "40000:3306"
+      - "3306:3306"
     volumes:
       - mariadb:/var/lib/mysql
     networks:
