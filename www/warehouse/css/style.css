@@ -3,10 +3,10 @@
 /** ************************* **/
 @font-face {
   font-family: 'NirmalaUI-Bold';
-  src: url('/fonts/nirmala-ui-bold.ttf');
+  src: url('../fonts/nirmala-ui-bold.ttf');
 }@font-face {
   font-family: 'NirmalaUI-Semilight';
-  src: url('/fonts/nirmala-ui-semilight.ttf');
+  src: url('../fonts/nirmala-ui-semilight.ttf');
 }
 .title{
   font-family: 'NirmalaUI-Semilight';

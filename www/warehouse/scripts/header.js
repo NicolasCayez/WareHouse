@@ -13,7 +13,7 @@ export function generateHeader(){
     header.append(logoTitle);
     let logo = document.createElement('img');
     logo.id = 'logo';
-    logo.src = '/img/logo.png';
+    logo.src = './img/logo.png';
     logo.alt = 'Logo WareHouse';
     logo.classList.add('col');
     logoTitle.append(logo);
@@ -35,7 +35,7 @@ export function generateHeader(){
     home.classList.add('d-inline-flex', 'col-2', 'ms-auto', 'title');
     header.append(home);
     let homeLogo = document.createElement('img');
-    homeLogo.src = '/img/home.png';
+    homeLogo.src = './img/home.png';
     homeLogo.alt = 'Logo WareHouse';
     homeLogo.classList.add('col', 'iconLG', 'my-auto');
     home.append(homeLogo);
@@ -56,7 +56,7 @@ export function generateHeader(){
     myWarehouses.classList.add('d-inline-flex', 'col-2', 'title');
     header.append(myWarehouses);
     let myWarehousesLogo = document.createElement('img');
-    myWarehousesLogo.src = '/img/home.png';
+    myWarehousesLogo.src = './img/home.png';
     myWarehousesLogo.alt = 'Logo WareHouse';
     myWarehousesLogo.classList.add('col', 'iconLG', 'my-auto');
     myWarehouses.append(myWarehousesLogo);
@@ -68,7 +68,7 @@ export function generateHeader(){
     myWarehouses.append(myWarehousesTitle);
     //CLICK on the LOGO and TITLE
     myWarehouses.addEventListener('click', () => {
-        window.location.href = ('/pages/myWarehouses/myWarehouses.html');
+        window.location.href = ('./pages/myWarehouses/myWarehouses.html');
     });
         
     //ACCOUNT

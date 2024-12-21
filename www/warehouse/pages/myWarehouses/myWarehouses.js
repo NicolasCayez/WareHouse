@@ -1,5 +1,5 @@
-import { generateBreadCrumb } from "./scripts/breadcrumb.js";
-import { createCard, createCardTitle } from "./scripts/cards.js";
+import { generateBreadCrumb } from "../../scripts/breadCrumb.js";
+import { createCard, createCardTitle } from "../../scripts/cards.js";
 
 // link aspect change
 let presentPageTitle = document.getElementById("headerMyWarehousesLink");
@@ -7,7 +7,7 @@ presentPageTitle.classList.remove('title');
 presentPageTitle.classList.add('title-bold');
 
 // breadcrumb
-let breadCrumbLinks = [['home','/index.html'], ['My Warehouses','./pages/myWarehouses/myWarehouses.html']];
+let breadCrumbLinks = [['home','../../index.html'], ['My Warehouses','../../pages/myWarehouses/myWarehouses.html']];
 generateBreadCrumb(breadCrumbLinks);
 
 

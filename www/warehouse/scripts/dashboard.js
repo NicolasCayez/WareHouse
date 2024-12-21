@@ -149,34 +149,34 @@ export function generateDashboard(){
         //***LINKS***
         //? SECTION - My Warehouses
         createMenulvl1('menuMyWarehouses');
-        createLinkByLvl('menuMyWarehouses', 'linkMyWarehouses', 'My Warehouses', '/pages/myWarehouses/myWarehouses.html', 1, true);
+        createLinkByLvl('menuMyWarehouses', 'linkMyWarehouses', 'My Warehouses', './pages/myWarehouses/myWarehouses.html', 1, true);
         // --> New WareHouse
-        createLinkByLvl('linkMyWarehouses'+'Group', 'linkNewWarehouses', 'New Warehouses', '/pages/myWarehouses/myWarehouses.html', 2, false);
+        createLinkByLvl('linkMyWarehouses'+'Group', 'linkNewWarehouses', 'New Warehouses', './pages/myWarehouses/myWarehouses.html', 2, false);
         //!A AUTOMATISER, POUR LE MOMENT EN DUR */
         // --> Warehouse 2
-        createLinkByLvl('linkMyWarehouses'+'Group', 'linkWarehouse2', 'Warehouse 2', '/pages/myWarehouses/myWarehouses.html', 2, false);
+        createLinkByLvl('linkMyWarehouses'+'Group', 'linkWarehouse2', 'Warehouse 2', './pages/myWarehouses/myWarehouses.html', 2, false);
         //!
         //? SECTION - Items
         createMenulvl1('menuItems');
-        createLinkByLvl('menuItems', 'linkItems', 'Items', '/pages/myWarehouses/myWarehouses.html', 1, false);
+        createLinkByLvl('menuItems', 'linkItems', 'Items', './pages/myWarehouses/myWarehouses.html', 1, false);
         //? SECTION - Transactions
         createMenulvl1('menuTransactions');
-        createLinkByLvl('menuTransactions', 'linkTransactions', 'Transactions', '/pages/transactions/transactions.html', 1, true);
+        createLinkByLvl('menuTransactions', 'linkTransactions', 'Transactions', './pages/transactions/transactions.html', 1, true);
         // --> Receptions
-        createLinkByLvl('linkTransactions'+'Group', 'linkReceptions', 'Receptions', '/pages/transactions/transactions.html', 2, false);
+        createLinkByLvl('linkTransactions'+'Group', 'linkReceptions', 'Receptions', './pages/transactions/transactions.html', 2, false);
         // --> Transferts
-        createLinkByLvl('linkTransactions'+'Group', 'linkTransferts', 'Transferts', '/pages/transactions/transactions.html', 2, true);
+        createLinkByLvl('linkTransactions'+'Group', 'linkTransferts', 'Transferts', './pages/transactions/transactions.html', 2, true);
         // --> --> New Transfert
-        createLinkByLvl('linkTransferts'+'Group', 'linkNewTransfert', 'New transfert', '/pages/transactions/newTransfert.html', 3, false);
+        createLinkByLvl('linkTransferts'+'Group', 'linkNewTransfert', 'New transfert', './pages/transactions/newTransfert.html', 3, false);
         // --> Stock modif
-        createLinkByLvl('linkTransactions'+'Group', 'linkStockModif', 'Stock modifications', '/pages/transactions/transactions.html', 2, false);
+        createLinkByLvl('linkTransactions'+'Group', 'linkStockModif', 'Stock modifications', './pages/transactions/transactions.html', 2, false);
         // --> Inventrories
-        createLinkByLvl('linkTransactions'+'Group', 'linkInventrories', 'Inventrories', '/pages/transactions/transactions.html', 2, true);
+        createLinkByLvl('linkTransactions'+'Group', 'linkInventrories', 'Inventrories', './pages/transactions/transactions.html', 2, true);
         // --> --> New Inventory
-        createLinkByLvl('linkInventrories'+'Group', 'linkNewInventory', 'New inventory', '/pages/transactions/transactions.html', 3, false);
+        createLinkByLvl('linkInventrories'+'Group', 'linkNewInventory', 'New inventory', './pages/transactions/transactions.html', 3, false);
         //? SECTION - Reports
         createMenulvl1('menuReports');
-        createLinkByLvl('menuReports', 'linkReports', 'Reports', '/pages/myWarehouses/myWarehouses.html', 1, false);
+        createLinkByLvl('menuReports', 'linkReports', 'Reports', './pages/myWarehouses/myWarehouses.html', 1, false);
         
         //? dernier lien en bas logOut/logAs
         createMenulvl1('logOutLogAs');
@@ -185,7 +185,7 @@ export function generateDashboard(){
         logOutLogAsLink.id = 'logOutLogAsLink';
         logOutLogAsLink.classList.add('title-bold', 'text-light', 'mb-2', 'ms-3', 'fs-6');
         logOutLogAsLink.innerText = 'log Out / Log As';
-        logOutLogAsLink.href = '/pages/myWarehouses/myWarehouses.html';
+        logOutLogAsLink.href = './pages/myWarehouses/myWarehouses.html';
         logOutLogAs.append(logOutLogAsLink);
         logOutLogAs.style.position = 'absolute';
         logOutLogAs.style.bottom = '0';
